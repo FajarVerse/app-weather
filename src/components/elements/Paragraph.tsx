@@ -7,7 +7,7 @@ const Paragraph = (props: ParagraphProps) => {
 
   return (
     <>
-      <p className="font-raleway font-semibold text-sm text-primary text-shadow">
+      <p className="font-raleway font-semibold text-sm text-primary text-shadow lg:text-base">
         {children}
       </p>
     </>

@@ -8,7 +8,7 @@ const SubHeader = (props: SubHeaderProps) => {
 
   return (
     <>
-      <h3 className="font-quicksand font-bold text-lg text-primary flex gap-2 items-center">
+      <h3 className="font-quicksand font-bold text-lg text-primary flex gap-2 items-center lg:text-xl">
         <span>{icon}</span>
         <span>{children}</span>
       </h3>

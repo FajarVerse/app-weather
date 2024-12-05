@@ -7,7 +7,7 @@ const Temperature = (props: TemperatureProps) => {
 
   return (
     <>
-      <h1 className="font-quicksand font-bold text-8xl text-primary text-shadow ">
+      <h1 className="font-quicksand font-bold text-8xl text-primary text-shadow lg:text-[9rem]">
         {children}
       </h1>
     </>

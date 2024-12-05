@@ -30,7 +30,7 @@ const CardDesc = (props: CardDescProps) => {
     <>
       <div className="w-1/2">
         <p className="desc-card">hari Ini</p>
-        <h4 className="font-quicksand font-semibold text-lg text-primary group-hover:text-gray-600 transition duration-300 ease-in">
+        <h4 className="font-quicksand font-semibold text-lg text-primary lg:text-xl group-hover:text-gray-600 transition duration-300 ease-in">
           {temp}
         </h4>
         <p className="desc-card">{weather}</p>

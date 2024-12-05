@@ -7,7 +7,7 @@
 }
 
 .desc-card {
-  @apply font-raleway font-medium text-sm text-primary text-nowrap group-hover:text-gray-600 transition duration-300 ease-in;
+  @apply font-raleway font-medium text-sm text-primary text-nowrap lg:text-base group-hover:text-gray-600 transition duration-300 ease-in;
 }
 
 .scroll-bar {

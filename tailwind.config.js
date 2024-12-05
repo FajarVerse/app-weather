@@ -9,7 +9,7 @@ export default {
     extend: {
       colors: {
         primary: "#FFFFFF",
-        second: "rgba(150,150,150, .7)",
+        second: "rgba(200,200,200, .4)",
         semilight: "rgba(255,255,255, .4)",
       },
     },
