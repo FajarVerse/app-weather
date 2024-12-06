@@ -16,7 +16,7 @@ const CardWeather = (props: CardWeatherProps) => {
 
   return (
     <>
-      <div className="w-auto px-3 py-3 bg-second rounded-md flex gap-6 justify-between items-center hover:bg-semilight group transition duration-300 ease-in-out">
+      <div className="w-auto px-3 py-3 bg-second rounded-md flex gap-6 justify-between items-center border-2 border-slate-300 xl:px-5 hover:bg-semilight group transition duration-300 ease-in-out">
         {children}
       </div>
     </>
@@ -30,7 +30,7 @@ const CardDesc = (props: CardDescProps) => {
     <>
       <div className="w-1/2">
         <p className="desc-card">hari Ini</p>
-        <h4 className="font-quicksand font-semibold text-lg text-primary lg:text-xl group-hover:text-gray-600 transition duration-300 ease-in">
+        <h4 className="font-quicksand font-semibold text-lg text-primary lg:text-xl group-hover:text-gray-700 transition duration-300 ease-in">
           {temp}
         </h4>
         <p className="desc-card">{weather}</p>

@@ -15,9 +15,9 @@ function App() {
         style={{ backgroundImage: `url(${bg})` }}
       >
         <div className="container w-full h-full mx-auto">
-          <div className="w-full px-5 md:px-20 lg:h-full lg:px-16 lg:flex xl:px-20">
+          <div className="w-full px-6 md:px-20 lg:h-full lg:px-16 lg:flex xl:px-20">
             <div className="block lg:w-3/4 lg:flex lg:flex-col lg:justify-between">
-              <div className="w-full flex justify-between lg:justify-normal lg:gap-5">
+              <div className="w-full flex justify-between lg:justify-normal lg:gap-10">
                 <Header>Bekasi</Header>
                 <Header>03.00</Header>
               </div>
@@ -40,7 +40,7 @@ function App() {
                   <SubHeader
                     icon={
                       <svg
-                        className="lg:w-7 lg:h-7"
+                        className="w-6 h-6 lg:w-7 lg:h-7"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 -960 960 960"
                         fill="#ffffff"
@@ -77,7 +77,7 @@ function App() {
                   <SubHeader
                     icon={
                       <svg
-                        className="lg:w-7 lg:h-7"
+                        className="w-6 h-6 lg:w-7 lg:h-7"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 -960 960 960"
                         fill="#ffffff"
@@ -89,7 +89,7 @@ function App() {
                     Pantau Langit Setiap Jam
                   </SubHeader>
                 </div>
-                <div className="w-full flex gap-5 overflow-x-scroll scroll-bar">
+                <div className="w-full flex gap-5 overflow-x-scroll scroll-bar xl:flex-wrap xl:justify-center xl:gap-6">
                   <CardWeather>
                     <CardWeather.CardDesc temp={30} weather="Mendung" />
                     <CardWeather.CardIcon
