@@ -8,7 +8,7 @@ const Header = (props: HeaderProps) => {
   return (
     <>
       <h2
-        className={`font-quicksand font-extrabold text-4xl text-primary text-shadow ${className}`}
+        className={`font-quicksand font-extrabold text-3xl text-primary text-shadow lg:text-4xl ${className}`}
       >
         {children}
       </h2>

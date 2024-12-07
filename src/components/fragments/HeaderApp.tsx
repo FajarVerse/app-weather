@@ -19,7 +19,6 @@ const HeaderApp = () => {
     }, 1000);
   }, []);
 
-  console.log(time);
   return (
     <>
       <div className="w-full flex justify-between lg:justify-normal lg:gap-10">
