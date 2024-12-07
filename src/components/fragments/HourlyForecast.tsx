@@ -31,7 +31,7 @@ const HourlyForecast = () => {
         <div className="w-full flex gap-5 overflow-x-scroll scroll-bar xl:grid xl:grid-cols-3 xl:grid-rows-3">
           {hourly &&
             hourly.length > 0 &&
-            hourly.map((w) => (
+            hourly.map((w:any) => (
               <CardWeather key={w.time} classname="xl:mr-5">
                 <CardWeather.CardDesc
                   date={format(Date.parse(w.time), "HH:mm", {

@@ -28,7 +28,7 @@ const DailyForecast = () => {
         <div className="w-full flex gap-5 overflow-x-scroll scroll-bar">
           {weather &&
             weather.length > 0 &&
-            weather.map((w) => (
+            weather.map((w: any) => (
               <CardWeather key={w.date}>
                 <CardWeather.CardDesc
                   date={w.date}

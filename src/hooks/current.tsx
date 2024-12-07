@@ -3,7 +3,7 @@ import { getCurrent } from "../services/current.service";
 import { GetLocation } from "./getLocation";
 
 export const CurrentWeather = () => {
-  const [current, setCurrent] = useState({});
+  const [current, setCurrent] = useState<any>({});
   const { lat, long } = GetLocation();
 
   useEffect(() => {

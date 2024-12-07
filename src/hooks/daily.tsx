@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
-import { getCurrent } from "../services/current.service";
-import { GetLocation } from "./getLocation";
 import { getDaily } from "../services/daily.servive";
+import { GetLocation } from "./getLocation";
 
 export const DailyWeather = () => {
-  const [current, setCurrent] = useState([]);
+  const [current, setCurrent] = useState<[]>([]);
   const { lat, long } = GetLocation();
 
   useEffect(() => {

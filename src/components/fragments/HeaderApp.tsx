@@ -23,7 +23,7 @@ const HeaderApp = () => {
     <>
       <div className="w-full flex justify-between lg:justify-normal lg:gap-10">
         <Header>{lokasi ? lokasi.name : "No Location"}</Header>
-        <Header>{time ? `${time} WIB`: "No Time"}</Header>
+        <Header>{time ? `${time} WIB` : "No Time"}</Header>
       </div>
     </>
   );
