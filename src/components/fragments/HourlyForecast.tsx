@@ -1,3 +1,5 @@
+import { format } from "date-fns";
+import { id } from "date-fns/locale";
 import { CurrentWeather } from "../../hooks/current";
 import SubHeader from "../elements/SubHeader";
 import ForecastLayout from "../layout/ForecastLayout";
@@ -5,8 +7,7 @@ import CardWeather from "./CardWeather";
 
 const HourlyForecast = () => {
   const weather = CurrentWeather();
-  const hourly = weather.forecast?.forecastday[0].hour.slice(1,10);
-  console.log(hourly);
+  const hourly = weather.forecast?.forecastday[0].hour.slice(1, 10);
 
   return (
     <>
@@ -33,7 +34,9 @@ const HourlyForecast = () => {
             hourly.map((w) => (
               <CardWeather key={w.time} classname="xl:mr-5">
                 <CardWeather.CardDesc
-                  date={w.time.substring(12,16)}
+                  date={format(Date.parse(w.time), "HH:mm", {
+                    locale: id,
+                  })}
                   temp={w.temp_c}
                   weather={w.condition.text}
                 />
