@@ -5,6 +5,7 @@ import SubHeader from "./components/elements/SubHeader";
 import Temperature from "./components/elements/Temperature";
 import Weather from "./components/elements/Weather";
 import CardWeather from "./components/fragments/CardWeather";
+import HeaderApp from "./components/fragments/headerApp";
 import ForecastLayout from "./components/layout/ForecastLayout";
 
 function App() {
@@ -17,10 +18,11 @@ function App() {
         <div className="container w-full h-full mx-auto">
           <div className="w-full px-6 md:px-20 lg:h-full lg:px-16 lg:flex xl:px-20">
             <div className="block lg:w-3/4 lg:flex lg:flex-col lg:justify-between">
-              <div className="w-full flex justify-between lg:justify-normal lg:gap-10">
+              {/* <div className="w-full flex justify-between lg:justify-normal lg:gap-10">
                 <Header>Bekasi</Header>
                 <Header>03.00</Header>
-              </div>
+              </div> */}
+              <HeaderApp />
 
               <div className="w-full px-2 mt-40 flex gap-5 items-center lg:mt-0 lg:px-0">
                 <div className="w-auto">
@@ -59,9 +61,9 @@ function App() {
                       icon={
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          height="inherit"
+                          height="24"
                           viewBox="0 -960 960 960"
-                          width="inherit"
+                          width="24"
                           fill="#ffffff"
                         >
                           <path d="m462 0 94-107-80-40 116-133h106l-94 107 80 40L568 0H462ZM222 0l94-107-80-40 116-133h106l-94 107 80 40L328 0H222Zm78-320q-91 0-155.5-64.5T80-540q0-83 55-145t136-73q32-57 87.5-89.5T480-880q90 0 156.5 57.5T717-679q69 6 116 57t47 122q0 75-52.5 127.5T700-320H300Zm0-80h400q42 0 71-29t29-71q0-42-29-71t-71-29h-60v-40q0-66-47-113t-113-47q-48 0-87.5 26T333-704l-10 24h-25q-57 2-97.5 42.5T160-540q0 58 41 99t99 41Zm180-200Z" />
@@ -96,9 +98,9 @@ function App() {
                       icon={
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          height="inherit"
+                          height="24"
                           viewBox="0 -960 960 960"
-                          width="inherit"
+                          width="24"
                           fill="#ffffff"
                         >
                           <path d="m462 0 94-107-80-40 116-133h106l-94 107 80 40L568 0H462ZM222 0l94-107-80-40 116-133h106l-94 107 80 40L328 0H222Zm78-320q-91 0-155.5-64.5T80-540q0-83 55-145t136-73q32-57 87.5-89.5T480-880q90 0 156.5 57.5T717-679q69 6 116 57t47 122q0 75-52.5 127.5T700-320H300Zm0-80h400q42 0 71-29t29-71q0-42-29-71t-71-29h-60v-40q0-66-47-113t-113-47q-48 0-87.5 26T333-704l-10 24h-25q-57 2-97.5 42.5T160-540q0 58 41 99t99 41Zm180-200Z" />

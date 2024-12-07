@@ -1,5 +1,5 @@
 interface HeaderProps {
-  children: string;
+  children: string | number | undefined;
   className?: string;
 }
 
