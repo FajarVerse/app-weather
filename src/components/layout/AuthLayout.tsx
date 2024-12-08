@@ -15,14 +15,14 @@ const AuthLayout = (props: AuthLayoutProps) => {
   const [background, setBackground] = useState<string>("");
 
   useEffect(() => {
-    const hours = format(new Date(), "HH", { locale: id });
-    if (hours >= "5" && hours <= "10") {
+    const hours = Number(format(new Date(), "HH", { locale: id }));
+    if (hours >= 5 && hours <= 10) {
       setBackground(sunrise_bg);
-    } else if (hours > "10" && hours <= "15") {
+    } else if (hours > 10 && hours <= 10) {
       setBackground(afternoon_bg);
-    } else if (hours > "15" && hours <= "19") {
+    } else if (hours > 15 && hours <= 19) {
       setBackground(sunset_bg);
-    } else if (hours > "19" && hours <= "5") {
+    } else {
       setBackground(night_bg);
     }
     console.log(hours);
