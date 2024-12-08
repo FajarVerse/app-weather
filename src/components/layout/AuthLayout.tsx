@@ -18,17 +18,14 @@ const AuthLayout = (props: AuthLayoutProps) => {
     const hours = Number(format(new Date(), "HH", { locale: id }));
     if (hours >= 5 && hours <= 10) {
       setBackground(sunrise_bg);
-    } else if (hours > 10 && hours <= 10) {
+    } else if (hours > 10 && hours <= 15) {
       setBackground(afternoon_bg);
     } else if (hours > 15 && hours <= 19) {
       setBackground(sunset_bg);
     } else {
       setBackground(night_bg);
     }
-    console.log(hours);
-  }, []);
-
-  console.log(background);
+  }, [background]);
 
   return (
     <>
