@@ -7,8 +7,9 @@ import CardWeather from "./CardWeather";
 
 const HourlyForecast = () => {
   const weather = CurrentWeather();
-  const hourly = weather.forecast?.forecastday[0].hour.slice(1, 10);
+  const hourly = weather.forecast?.forecastday[0].hour
 
+  console.log(weather);
   return (
     <>
       <ForecastLayout classname="flex-wrap">
@@ -28,11 +29,11 @@ const HourlyForecast = () => {
             Pantau Langit Setiap Jam
           </SubHeader>
         </div>
-        <div className="w-full flex gap-5 overflow-x-scroll scroll-bar xl:grid xl:grid-cols-3 xl:grid-rows-3">
+        <div className="grid grid-rows-1 grid-flow-col gap-5 overflow-x-scroll scroll-bar lg:grid-rows-2 2xl:grid-rows-3 2xl:overflow-y-scroll 2xl:pb-3">
           {hourly &&
             hourly.length > 0 &&
-            hourly.map((w:any) => (
-              <CardWeather key={w.time} classname="xl:mr-5">
+            hourly.map((w: any) => (
+              <CardWeather key={w.time} classname="">
                 <CardWeather.CardDesc
                   date={format(Date.parse(w.time), "HH:mm", {
                     locale: id,

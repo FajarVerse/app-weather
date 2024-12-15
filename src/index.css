@@ -11,5 +11,5 @@
 }
 
 .scroll-bar {
-  @apply [&::-webkit-scrollbar]:h-1 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-transparent;
+  @apply [&::-webkit-scrollbar]:h-1 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-transparent 2xl:[&::-webkit-scrollbar]:h-1.5 2xl:[&::-webkit-scrollbar-thumb]:bg-white 2xl:[&::-webkit-scrollbar-thumb]:opacity-0;
 }

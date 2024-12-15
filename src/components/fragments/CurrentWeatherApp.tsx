@@ -31,9 +31,6 @@ const CurrentWeatherApp = () => {
         </div>
         <div className="w-3/5 self-end py-2">
           <Weather>{weather ? weather : "None"}</Weather>
-          <Paragraph>
-            {currentWeather ? currentWeather.condition.text : "None"}
-          </Paragraph>
         </div>
       </div>
     </>

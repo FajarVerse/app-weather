@@ -10,7 +10,7 @@ function App() {
       <AuthLayout>
         <div className="container w-full h-full mx-auto">
           <div className="w-full px-6 md:px-20 lg:h-full lg:px-16 lg:flex xl:px-20">
-            <div className="block lg:w-3/4 lg:flex lg:flex-col lg:justify-between">
+            <div className="block lg:w-3/4 lg:flex lg:flex-col lg:gap-10 lg:justify-between">
               <HeaderApp />
               <CurrentWeatherApp />
             </div>
