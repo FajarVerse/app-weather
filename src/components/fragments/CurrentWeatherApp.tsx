@@ -22,7 +22,7 @@ const CurrentWeatherApp = () => {
   const dateResults = convertDate(currentWeather?.last_updated);
   return (
     <>
-      <div className="w-full px-2 mt-40 flex gap-10 items-center lg:mt-0 lg:px-0">
+      <div className="w-full px-2 mt-40 flex  items-center lg:mt-0 lg:px-0">
         <div className="w-2/5">
           <Paragraph>{dateResults ? dateResults : "No Date"}</Paragraph>
           <Temperature>

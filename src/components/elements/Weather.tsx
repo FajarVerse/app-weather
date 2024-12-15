@@ -7,7 +7,7 @@ const Weather = (props: WeatherProps) => {
 
   return (
     <>
-      <h3 className="font-raleway font-semibold text-[1.2rem] text-primary text-shadow lg:text-2xl">
+      <h3 className="font-raleway font-semibold text-[1.2rem] text-primary text-shadow lg:text-2xl xl:text-3xl">
         {children}
       </h3>
     </>
