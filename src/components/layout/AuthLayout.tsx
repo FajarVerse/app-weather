@@ -5,6 +5,9 @@ import sunrise_bg from "../../assets/image/sunrise_bg.jpg";
 import sunset_bg from "../../assets/image/sunset_bg.jpg";
 import afternoon_bg from "../../assets/image/afernoon_bg.jpg";
 import night_bg from "../../assets/image/night_bg.jpg";
+import Loader from "../elements/Loader";
+import SubHeader from "../elements/SubHeader";
+import Loading from "../fragments/Loading";
 
 interface AuthLayoutProps {
   children: React.ReactNode;
@@ -34,6 +37,7 @@ const AuthLayout = (props: AuthLayoutProps) => {
         style={{ backgroundImage: `url(${background})` }}
       >
         {children}
+        <Loading />
       </section>
     </>
   );
