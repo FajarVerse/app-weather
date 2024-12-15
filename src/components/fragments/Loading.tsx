@@ -7,7 +7,7 @@ const Loading = () => {
   useEffect(() => {
     setTimeout(() => {
       loaderRef.current.classList.add("loader-hidden");
-    }, 2000);
+    }, 3000);
   });
 
   return (
