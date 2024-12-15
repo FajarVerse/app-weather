@@ -7,9 +7,6 @@ const Loading = () => {
   useEffect(() => {
     setTimeout(() => {
       loaderRef.current.classList.add("loader-hidden");
-      if (loaderRef) {
-        document.body.removeChild(loaderRef);
-      }
     }, 2000);
   });
 
