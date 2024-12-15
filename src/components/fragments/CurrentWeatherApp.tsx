@@ -1,5 +1,4 @@
 import { CurrentWeather } from "../../hooks/current";
-import { WeatherCondition } from "../../hooks/weatherCondition";
 import Paragraph from "../elements/Paragraph";
 import Temperature from "../elements/Temperature";
 import Weather from "../elements/Weather";
