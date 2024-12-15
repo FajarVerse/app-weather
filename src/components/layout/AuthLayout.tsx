@@ -31,7 +31,7 @@ const AuthLayout = (props: AuthLayoutProps) => {
   return (
     <>
       <section
-        className="py-9 bg-cover bg-fixed lg:h-screen "
+        className="py-9 bg-cover bg-center bg-fixed lg:h-screen "
         style={{ backgroundImage: `url(${background})` }}
       >
         {children}
