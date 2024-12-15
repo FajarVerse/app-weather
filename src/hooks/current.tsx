@@ -1,25 +1,25 @@
 import { useEffect, useState } from "react";
 import { getCurrent } from "../services/current.service";
-import { GetLocation } from "./getLocation";
+import { UserIp } from "./userIp";
 
 export const CurrentWeather = () => {
   const [current, setCurrent] = useState<any>({});
-  const { lat, long } = GetLocation();
+  const userIP = UserIp();
 
   useEffect(() => {
     const fetchWeather = async (): Promise<void> => {
       try {
-        const data = await getCurrent(lat, long);
+        const data = await getCurrent(userIP);
         setCurrent(data);
       } catch (error) {
         console.log("Error fetching weather:", error);
       }
     };
 
-    if (lat && long) {
+    if (userIP) {
       fetchWeather();
     }
-  }, [lat, long]);
+  }, [userIP]);
 
   return current;
 };
